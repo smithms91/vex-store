@@ -4,7 +4,6 @@ import Footer from "@/components/footer";
 import HowItWorks from "@/components/how-it-works";
 import InfoBox from "@/components/info-box";
 import TopHeader from "@/components/top-header";
-import { MovingBorder } from "@/components/ui/moving-border";
 import { AlignJustify, ShoppingCart, X } from 'lucide-react'
 
 export default function Home() {
