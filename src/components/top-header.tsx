@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 import { cn } from '@/lib/utils';
+import Link from 'next/link';
 
 type Props = {}
 
@@ -40,7 +41,7 @@ const TopHeader = (props: Props) => {
             <li className='pb-2 border-b'>Shop</li>
             <li className='pb-2 border-b'>Packs</li>
             <li className='pb-2 border-b'>Custom</li>
-            <li className='pb-2 border-b'>FAQ</li>
+            <li><Link href="/faq" className='pb-2 border-b'>FAQ</Link></li>
           </ul>
           <div id="bottom">
             <p>Test</p>
@@ -62,7 +63,7 @@ const TopHeader = (props: Props) => {
           </CarouselContent>
         </Carousel>
         <div className='flex justify-between my-2 pb-2 px-4'>
-          <h1 className='font-bold'>VEX</h1>
+          <Link href="/" className='font-bold'>VEX</Link>
           <div className='flex items-center justify-center gap-x-3'>
             <AlignJustify size={20} onClick={() => setOpen(!open)} />
             <ShoppingCart size={20} />

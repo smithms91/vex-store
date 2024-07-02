@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { Facebook, Instagram, X, Youtube } from 'lucide-react'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -15,36 +16,36 @@ const Footer = (props: Props) => {
       <div className='grid grid-cols-2 grid-rows-2 gap-6 mt-4'>
         <ul>
           <h1 className='text-2xl lowercase text-slate-600 font-bold mb-2'>Connect</h1>
-          <li className='flex items-center'><Instagram size={12} className='mr-1' />Instagram</li>
-          <li className='flex items-center'><Facebook size={12} className='mr-1' />Facebook</li>
-          <li className='flex items-center'><Youtube size={12} className='mr-1' />YouTube</li>
-          <li className='flex items-center'><X size={12} className='mr-1' />X</li>
+          <Link href="https://instagram.com/vex.cards"><li className='flex items-center'><Instagram size={12} className='mr-1' />Instagram</li></Link>
+          <Link href="/"><li className='flex items-center'><Facebook size={12} className='mr-1' />Facebook</li></Link>
+          <Link href="/"><li className='flex items-center'><Youtube size={12} className='mr-1' />YouTube</li></Link>
+          <Link href="/"><li className='flex items-center'><X size={12} className='mr-1' />X</li></Link>
         </ul>
         <ul>
           <h1 className='text-2xl lowercase text-slate-600 font-bold mb-2'>Shop</h1>
-          <li>Single Card</li>
-          <li>Multiple Cards</li>
-          <li>Vex Band</li>
-          <li>Vex Dot</li>
+          <Link href="/"><li>Single Card</li></Link>
+          <Link href="/"><li>Multiple Cards</li></Link>
+          <Link href="/"><li>Vex Band</li></Link>
+          <Link href="/"><li>Vex Dot</li></Link>
         </ul>
         <ul>
           <h1 className='text-2xl lowercase text-slate-600 font-bold mb-2'>Company</h1>
-          <li>About</li>
-          <li>Shipping</li>
+          <Link href="/about"><li>About</li></Link>
+          <Link href="/"><li>Shipping</li></Link>
         </ul>
         <ul>
           <h1 className='text-2xl lowercase text-slate-600 font-bold mb-2'>Support</h1>
-          <li>Contact</li>
-          <li>Start Return</li>
-          <li>FAQ</li>
+          <Link href="/"><li>Contact</li></Link>
+          <Link href="/policies/refund-policy"><li>Start Return</li></Link>
+          <Link href="/faq"><li>FAQ</li></Link>
         </ul>
       </div>
       <hr />
       <div>
         <div className='flex items-center justify-between text-slate-600 tracking-tighter'>
-          <p>Terms of Service</p>
-          <p>Privacy Policy</p>
-          <p>Warranty</p>
+          <Link href="/"><p>Terms of Service</p></Link>
+          <Link href="/"><p>Privacy Policy</p></Link>
+          <Link href="/"><p>Warranty</p></Link>
         </div>
         <div className='flex items-center justify-between w-full mt-4 text-slate-600'>
           <p>&copy; 2024 Vex Cards</p>

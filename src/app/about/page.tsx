@@ -1,13 +1,13 @@
-import React from 'react'
-import TopHeader from '@/components/top-header'
-import Footer from '@/components/footer'
 import FaqCommon from '@/components/faq-common'
 import FaqCompatibility from '@/components/faq-compatibility'
 import FaqShipping from '@/components/faq-shipping'
+import Footer from '@/components/footer'
+import TopHeader from '@/components/top-header'
+import React from 'react'
 
 type Props = {}
 
-const FaqPage = (props: Props) => {
+const AboutPage = (props: Props) => {
   return (
     <main className='flex flex-col min-h-screen relative bg-[#F4F4F6]'>
       {/* This div is for the top header that will be fixed to the top of the screen */}
@@ -24,4 +24,4 @@ const FaqPage = (props: Props) => {
   )
 }
 
-export default FaqPage
+export default AboutPage

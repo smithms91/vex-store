@@ -4,7 +4,6 @@ import HowItWorks from "@/components/how-it-works";
 import InfoBox from "@/components/info-box";
 import TopHeader from "@/components/top-header";
 import { AlignJustify, ShoppingCart, X } from 'lucide-react'
-import Image from "next/image";
 
 export default function Home() {
   return (

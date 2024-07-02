@@ -11,7 +11,7 @@ const FaqCompatibility = (props: Props) => {
         <AccordionItem value="item-12">
           <AccordionTrigger className='text-left'>Compatibility Disclaimer</AccordionTrigger>
           <AccordionContent>
-            It is important to note that the compatibility list is respective of the phone’s NFC capability.<br /><br />
+            It is important to note that the compatibility list is respective of the phone&apos;s NFC capability.<br /><br />
             In short: no matter the phone or device, you can have a dot stuck to the back!<br /><br />
             Your dot.Profile comes with a QR so any phone with a camera can scan and receive your contact information!<br /><br />
             This means you can use a dot.device in any situation even if your phone is not on the compatibility list!
@@ -113,7 +113,7 @@ const FaqCompatibility = (props: Props) => {
           <AccordionTrigger className='text-left'>Does my dot.device work through thick phone cases?</AccordionTrigger>
           <AccordionContent>
             Your dot.device will work through most cases!<br /><br />
-            Please note that metal cases, or very thick cases such as an OtterBox, can prove disruptive to your dot.device’s ability to connect with other smartphones.<br /><br />
+            Please note that metal cases, or very thick cases such as an OtterBox, can prove disruptive to your dot.device&apos;s ability to connect with other smartphones.<br /><br />
             If you are currently using such a case, we suggest tapping the front of the phone (near the top for iPhones, near the middle for Androids) as an alternative.
           </AccordionContent>
         </AccordionItem>
