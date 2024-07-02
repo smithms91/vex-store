@@ -1,3 +1,5 @@
+import CTACard from "@/components/cta-card";
+import Footer from "@/components/footer";
 import HowItWorks from "@/components/how-it-works";
 import InfoBox from "@/components/info-box";
 import TopHeader from "@/components/top-header";
@@ -12,14 +14,17 @@ export default function Home() {
         <TopHeader />
       </div>
       <section className="mt-24 z-0">
-        <div className="flex flex-wrap gap-x-4 gap-y-4 items-center justify-center">
+        <div className="grid grid-cols-2 p-4 gap-4">
           <InfoBox icon={ShoppingCart} text="Only one person needs a card and everyone can connect." />
           <InfoBox icon={X} text="Works will all types of phones. Both iPhone and Android." />
           <InfoBox icon={AlignJustify} text="No app required to share your profile. It opens in the browser." />
           <InfoBox icon={ShoppingCart} text="Built to last a lifetime. Update your info as it changes." />
         </div>
         <HowItWorks />
+        <CTACard size="large" title="One card. A life full of connecting" />
+        <CTACard size="small" title="share your contact info, social accounts, music, payment info & more." image="/socials.jpg" />
       </section>
+      <Footer />
     </main>
   );
 }

@@ -8,7 +8,7 @@ type Props = {
 
 const InfoBox = ({ text, icon: Icon }: Props) => {
   return (
-    <div className='w-40 shadow-xl bg-white rounded-3xl p-4 leading-5'>
+    <div className='shadow-xl bg-white rounded-3xl p-4 leading-5'>
       <Icon className='mb-4' size={26} />
       {text}
     </div>

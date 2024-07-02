@@ -30,7 +30,7 @@ const TopHeader = (props: Props) => {
 
   return (
     <>
-      <div className={cn("transition-all duration-500 ease-in-out motion-reduce:transition-none motion-reduce:hover:transform-none overflow-hidden bg-white/95 z-10", open == true ? 'max-h-screen h-screen' : 'h-0 max-h-0')}>
+      <div className={cn("transition-all duration-500 ease-in-out motion-reduce:transition-none motion-reduce:hover:transform-none overflow-hidden bg-white opacity-[.97] z-10", open == true ? 'max-h-screen h-screen' : 'h-0 max-h-0')}>
         <div id="main-nav" className='p-4'>
           <div id="menuclose" className='flex items-center justify-between pb-4 border-b-2'>
             <p className='font-bold'>MENU</p>
@@ -47,7 +47,7 @@ const TopHeader = (props: Props) => {
           </div>
         </div>
       </div>
-      <nav className='shadow-xl px-4 w-full lg:w-[85%] rounded-b-2xl z-20 bg-white'>
+      <nav className='shadow-xl px-4 w-full lg:w-[85%] rounded-b-2xl z-210 bg-white'>
         <Carousel className='text-center text-xs border-b-2 border-gray-200 py-1'
           plugins={[
             Autoplay({
