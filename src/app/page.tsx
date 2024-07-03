@@ -1,6 +1,7 @@
 import BuyNow from "@/components/buy-now";
 import CTACard from "@/components/cta-card";
 import Footer from "@/components/footer";
+import GetProducts from "@/components/get-products";
 import HowItWorks from "@/components/how-it-works";
 import InfoBox from "@/components/info-box";
 import TopHeader from "@/components/top-header";
@@ -14,6 +15,7 @@ export default function Home() {
         <TopHeader />
       </div>
       <section className="mt-24 z-0">
+        {/* <GetProducts /> */}
         <BuyNow />
         <div className="grid grid-cols-2 p-4 gap-4">
           <InfoBox icon={ShoppingCart} text="Only one person needs a card and everyone can connect." />

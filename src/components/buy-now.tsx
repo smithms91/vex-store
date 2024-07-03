@@ -4,6 +4,7 @@ import { Button } from './ui/button'
 import { ArrowRight } from 'lucide-react'
 import { Plus_Jakarta_Sans, Pixelify_Sans } from 'next/font/google'
 import { cn } from '@/lib/utils'
+import Link from 'next/link'
 
 const pjsans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 const gothic = Pixelify_Sans({ weight: ['400'], subsets: ["latin"] });
@@ -27,7 +28,7 @@ const BuyNow = (props: Props) => {
         <p className={cn('text-sm uppercase tracking-widest ', gothic.className)}>New and Improved Vex Cards</p>
         <h1 className={cn('text-4xl font-bold', pjsans.className)}>Get your Vex Card Today!</h1>
         <p className='text-sm'>Choose from multiple different colors and styles.</p>
-        <Button className='flex items-center bg-white border-2 border-black text-black text-2xl my-2 p-6'>Buy Now <ArrowRight /></Button>
+        <Link href="/products/8521466315009" className='flex items-center bg-white border-2 border-black text-black text-2xl my-2 py-2 px-4 rounded-md'>Buy Now <ArrowRight /></Link>
       </div>
     </section>
 
