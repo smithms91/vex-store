@@ -18,12 +18,12 @@ const SingleProductPage = async ({ params }: SingleProductPageProps) => {
       <div className="flex flex-col md:flex-row md:items-center">
         <div className="md:basis-1/2">
           <Image
-            src={product.featuredImage.url}
-            alt={product.featuredImage.altText}
-            width={product.featuredImage.width}
-            height={product.featuredImage.height}
+            src={product?.featuredImage?.url}
+            alt={product?.featuredImage?.altText}
+            width={product?.featuredImage?.width}
+            height={product?.featuredImage?.height}
             placeholder="blur"
-            blurDataURL={product.featuredImage.url}
+            blurDataURL={product?.featuredImage?.url}
           />
         </div>
 
