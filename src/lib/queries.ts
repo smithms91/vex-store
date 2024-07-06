@@ -62,7 +62,22 @@ export const getProduct = async (id: string): Promise<GraphQLSingleResponse> => 
       query: gql`
         query SingleProductQuery($id: ID!) {
           product(id: $id) {
+            description
+            featuredImage {
+              altText
+              height
+              id
+              url
+              width
+            }
             id
+            priceRangeV2 {
+              minVariantPrice {
+                amount
+                currencyCode
+              }
+            }
+            tags
             title
           }
         }
